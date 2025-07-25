@@ -120,32 +120,41 @@
     </div>
   </section>
 
-  <!-- Latest Deal Section -->
-  <section class="p-8">
-    <h2 class="text-3xl font-bold text-center">Latest Deals</h2>
-    <p class="text-center text-gray-600 mb-8">Don’t miss out on these special offers.Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="border p-4 rounded-lg text-center">
-        <img src="./assets/deal-ana.png" alt="Deal" class="w-full h-40 object-cover mb-4">
-        <h3 class="font-semibold">Spring Sale</h3>
-        <p class="text-pink-600 font-bold">30% off</p>
-        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
-      </div>
-      <div class="border p-4 rounded-lg text-center">
-        <img src="./assets/deal-bloom.png" alt="Deal" class="w-full h-40 object-cover mb-4">
-        <h3 class="font-semibold">Spring Sale</h3>
-        <p class="text-pink-600 font-bold">60% off</p>
-        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
-      </div>
-      <div class="border p-4 rounded-lg text-center">
-        <img src="./assets/deal-zabo.png" alt="Deal" class="w-full h-40 object-cover mb-4">
-        <h3 class="font-semibold">Spring Sale</h3>
-        <p class="text-pink-600 font-bold">25% off</p>
-        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
-      </div>
-      <!-- Add 2 more deal cards -->
+ <!-- Latest Deal Section -->
+<section class="p-8 bg-white">
+  <h2 class="text-4xl font-bold text-center text-orange-600 mb-6">Latest Deals</h2>
+  <p class="text-center text-gray-600 mb-8">Don’t miss out on these special offers. Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+  
+  <!-- Grid Layout -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- First Deal Card -->
+    <div class="border p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+      <img src="./assets/deal-bloom.png" alt="Bloom Plant" class="w-full h-40 object-cover mb-4 rounded-lg">
+      <h3 class="font-semibold text-lg text-gray-800">Bloom Plant</h3>
+      <p class="text-pink-600 font-bold">60% Off</p>
+      <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Shop Now</button>
     </div>
-  </section>
+
+    <!-- Second Deal Card -->
+    <div class="border p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+      <img src="./assets/deal-ana.png" alt="Ana Plant" class="w-full h-40 object-cover mb-4 rounded-lg">
+      <h3 class="font-semibold text-lg text-gray-800">Ana Plant</h3>
+      <p class="text-pink-600 font-bold">30% Off</p>
+      <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Shop Now</button>
+    </div>
+
+    <!-- Third Deal Card -->
+    <div class="border p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+      <img src="./assets/deal-zabo.png" alt="Zabo Plant" class="w-full h-40 object-cover mb-4 rounded-lg">
+      <h3 class="font-semibold text-lg text-gray-800">Zabo Plant</h3>
+      <p class="text-pink-600 font-bold">25% Off</p>
+      <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Shop Now</button>
+    </div>
+  </div>
+</section>
+
+
+
 
   <!-- Join Section -->
   <section class="p-8 text-center text-white bg-cover bg-center" style="background-image: url('./assets/news-letter-bg.png');">
