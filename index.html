@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faugei Flower Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Optional spinning animation */
+    @keyframes spin-slow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .spin-slow {
+      animation: spin-slow 8s linear infinite;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between p-4 shadow-md">
+    <div class="flex items-center space-x-2">
+      <img src="./assets/logo.png" alt="Logo" class="h-10">
+      <span class="font-bold text-xl"></span>
+    </div>
+    <nav class="hidden md:flex space-x-6 text-lg">
+      <a href="#" class="hover:text-pink-600">Home</a>
+      <a href="#" class="hover:text-pink-600">Shop</a>
+      <a href="#" class="hover:text-pink-600">about us</a>
+    </nav>
+    <div class="flex items-center space-x-2">
+      <span class="hidden md:inline">Cart</span>
+    </div>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center p-8 bg-gray-50">
+    <div class="md:w-1/2 space-y-4">
+      <h1 class="text-4xl font-bold">always Fresh Flowers</h1>
+      <p class="text-lg text-gray-600">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+      <button class="bg-pink-500 text-white px-5 py-2 rounded hover:bg-pink-600">Shop Now</button>
+    </div>
+    <div class="md:w-1/2">
+      <img src="./assets/hero-flower.png" alt="Hero Flower" class="w-full">
+    </div>
+  </section>
+
+  <!-- Plants Section -->
+  <section class="p-8">
+    <h2 class="text-3xl font-bold text-center">Our Plants</h2>
+    <p class="text-center text-gray-600 mb-8">Explore our hand-picked selection of beautiful flowers.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- Repeatable product card -->
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/sample-flower-image.png" alt="Plant" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">lily blossom</h3>
+        <p class="text-pink-600 font-bold">$20</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/sample-flower-image.png" alt="Plant" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">lily blossom</h3>
+        <p class="text-pink-600 font-bold">$20</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/sample-flower-image.png" alt="Plant" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">lily blossom</h3>
+        <p class="text-pink-600 font-bold">$20</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/sample-flower-image.png" alt="Plant" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">lily blossom</h3>
+        <p class="text-pink-600 font-bold">$20</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/sample-flower-image.png" alt="Plant" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">lily blossom</h3>
+        <p class="text-pink-600 font-bold">$20</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/sample-flower-image.png" alt="Plant" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">lily blossom</h3>
+        <p class="text-pink-600 font-bold">$20</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/sample-flower-image.png" alt="Plant" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">lily blossom</h3>
+        <p class="text-pink-600 font-bold">$20</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/sample-flower-image.png" alt="Plant" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">lily blossom</h3>
+        <p class="text-pink-600 font-bold">$20</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <!-- Add 4 more similar cards -->
+    </div>
+  </section>
+
+  <!-- Plant Lover Section -->
+  <section class="flex flex-col md:flex-row items-center p-8 bg-gray-50 relative">
+    <div class="md:w-1/2 relative">
+      <img src="./assets/flower-store.png" alt="Plant Lover" class="w-full rounded-lg">
+      <img src="./assets/trusted-badge.png" alt="Trusted" class="absolute top-4 left-4 w-20 spin-slow hidden md:block">
+    </div>
+    <div class="md:w-1/2 md:pl-8 space-y-4">
+      <h2 class="text-3xl font-bold">Flower & Plants Lover</h2>
+      <ul class="list-disc pl-5 space-y-2 text-gray-600">
+        <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+        <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+        <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Latest Deal Section -->
+  <section class="p-8">
+    <h2 class="text-3xl font-bold text-center">Latest Deals</h2>
+    <p class="text-center text-gray-600 mb-8">Don’t miss out on these special offers.Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/deal-ana.png" alt="Deal" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">Spring Sale</h3>
+        <p class="text-pink-600 font-bold">30% off</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/deal-bloom.png" alt="Deal" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">Spring Sale</h3>
+        <p class="text-pink-600 font-bold">60% off</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg text-center">
+        <img src="./assets/deal-zabo.png" alt="Deal" class="w-full h-40 object-cover mb-4">
+        <h3 class="font-semibold">Spring Sale</h3>
+        <p class="text-pink-600 font-bold">25% off</p>
+        <button onclick="addToCart()" class="mt-2 bg-pink-500 text-white px-4 py-1 rounded hover:bg-pink-600">Add to Cart</button>
+      </div>
+      <!-- Add 2 more deal cards -->
+    </div>
+  </section>
+
+  <!-- Join Section -->
+  <section class="p-8 text-center text-white bg-cover bg-center" style="background-image: url('./assets/news-letter-bg.png');">
+    <h2 class="text-3xl font-bold mb-4">Join the Colorful Bunch</h2>
+    <div class="flex justify-center max-w-md mx-auto">
+      <input type="email" placeholder="Enter your email" class="w-full p-2 rounded-l text-gray-800">
+      <button class="bg-pink-500 px-4 rounded-r hover:bg-pink-600">Subscribe</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-8 bg-gray-800 text-white flex flex-col md:flex-row justify-between">
+    <div class="flex items-center space-x-2 mb-4 md:mb-0">
+      <img src="./assets/logo.png" alt="Logo" class="h-10">
+      
+    </div>
+    <div class="space-x-4">
+      <a href="#" class="hover:text-pink-400">Home</a>
+      <a href="#" class="hover:text-pink-400">About Us</a>
+      <a href="#" class="hover:text-pink-400">Blog</a>
+      <a href="#" class="hover:text-pink-400">FAQ</a>
+      <a href="#" class="hover:text-pink-400">Contact Us</a>
+    </div>
+    <div class="space-x-4">
+      <a href="#" class="hover:text-pink-400">Features</a>
+      <a href="#" class="hover:text-pink-400">Features</a>
+      <a href="#" class="hover:text-pink-400">Privacy Policy</a>
+      <a href="#" class="hover:text-pink-400">Terms of Service</a>
+      <a href="#" class="hover:text-pink-400">Help Center</a>
+    </div>
+  </footer>
+
+  <script>
+    function addToCart() {
+      alert("Flower Added to Cart");
+    }
+  </script>
+
+</body>
+</html>
